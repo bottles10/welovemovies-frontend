@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welovemovies</title>
+  </head>
+  <body class="">
+    <!-- navigation / header -->
+    <header
+      class="p-3 text-white bg-hero-custom-image bg-cover bg-center bg-no-repeat"
+    >
+      <div class="flex items-center space-x-20">
+        <h1 class="font-serif text-2xl font-bold italic">
+          <a href="/">WeLoveMovies</a>
+        </h1>
+        <nav class="space-x-5">
+          <a href="/all-movies.html">All Movies</a>
+          <a href="/theaters.html">All Theaters</a>
+        </nav>
+      </div>
+
+      <div class="w-3/4 mx-auto my-20">
+        <h2 class="mb-3 text-6xl font-light">find your next favorite movie!</h2>
+        <p class="text-xl font-light">
+          <span class="italic">WeLoveMovies</span> is your source for finding
+          reviews of movies in theatres near you.
+        </p>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-10 lg:px-48">
+      <!-- now showing section -->
+      <div class="py-10">
+        <div>
+          <a
+            href="/all-movies.html"
+            class="mb-6 inline-block py-2 px-6 bg-gray-200 text-white rounded-lg shadow"
+            >&larr; Back</a
+          >
+          <article class="md:flex md:space-x-8">
+            <div class="md:w-96 lg:w-auto">
+              <img
+                src="/images/monty-python.jpg"
+                alt="monty python and the holy grail"
+                class="w-full rounded-t"
+              />
+            </div>
+            <div class="md:w-96 lg:w-auto space-y-3">
+              <h4 class="text-3xl font-bold">
+                Monty Python and the Holy Grail
+              </h4>
+              <p>
+                History is turned on its comic head when, in tenth century
+                England, King Arthur (Graham Chapman) travels the countryside to
+                find knights who will join him at the Round Table in Camelot.
+                Gathering up the men is a tale in itself but after a bit of a
+                party at Camelot, many decide to leave only to be stopped by
+                God, who sends them on a quest: to find the Holy Grail...
+              </p>
+              <p class="font-bold">
+                Runtime: <span class="font-light">minutes</span>
+              </p>
+              <p class="font-bold">
+                Rating: <span class="font-light">PG</span>
+              </p>
+              <p class="font-bold">
+                Average Review Rating: <span class="font-light">3</span>
+              </p>
+              <div>
+                <h4 class="mb-2 text-2xl font-bold">Now Showing Here</h4>
+                <div class="grid md:grid-cols-4 lg:grid-cols-6 gap-8">
+                  <div class="p-3 col-span-2 border rounded">
+                    <h6 class="text-xl font-semibold">Regal City Center</h6>
+                    <p>801 C St.</p>
+                    <p>Vancouver, WA 98660</p>
+                  </div>
+                  <div class="p-3 col-span-2 border rounded">
+                    <h6 class="text-xl font-semibold">Regal City Center</h6>
+                    <p>801 C St.</p>
+                    <p>Vancouver, WA 98660</p>
+                  </div>
+                  <div class="p-3 col-span-2 border rounded">
+                    <h6 class="text-xl font-semibold">Regal City Center</h6>
+                    <p>801 C St.</p>
+                    <p>Vancouver, WA 98660</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="mb-2 text-2xl font-bold">Reviews</h4>
+                <div class="container mx-auto space-y-6">
+                    <div class="p-6 border rounded">
+                        <review-content class="mb-6 block leading-relaxed space-y-3">
+                            <p class="text-2xl font-semibold">Abhi Patil <span class="text-base font-light">of Independent (UK)</span></p>
+                            <p>Lorem markdownum priores iactate receptus margine in motu ferreus pastor. Teneat tua opifex regina, adest; similisque nec, me convivia ortus.</p>
+                            <p>Est sontes praemia fatorum diversosque innubere rursus. Tanto inter commenta tremulasque tergo donec Apollinei mearum: Hector colorum horruit.</p>
+                            <p>Cur repulsa matrem frequentes parvum coniuge ad nisi leto, ira. Orbis levatus o coniugis longis confinia bello rursus quem Atridae indulgere! Sanguine o operi flammas sorores suffundit et ilia. Nais edentem tamen. Acta munera enixa ad terram!</p>
+                            <p>Sint sed per oppugnant Medusae Pagasaeae undique rebus cernit terram delituit dilapsa tigres. Ait omne conatur nomen cumque, ad Minoa magna dolentes, ageret. Sum addat, et unum iunge, aberant his indigenae facundia?</p>
+                            <p>Perdidit astra, si maternis sibi, Phoebi protinus senecta digitos. Atque suique Lyrnesia, prosunt suae mihi aqua, te!</p>
+                            <p>Subsedit tantaque vulnera totiens aptos vivit digna pectoraque mutua. Duro ante tibi perhorruit praedelassat simulat turis loco hunc dederat viscera scilicet transitus quam longius aenea, concussaque hoc mille.</p>
+                            <p>Ut erat. Tibi Themin corpore saepes.</p>
+                        </review-content>
+                        <div class="mb-6 flex space-x-2">
+                        <p class="font-bold">Rating:</p>
+                        <p id="rating-number">4</p>
+                        <rating-button class="inline-block -space-x-2">
+                            <button class="text-blue-500 font-extrabold transform rotate-90">&larr;</button>
+                            <button class="text-blue-500 font-extrabold transform -rotate-90">&larr;</button>
+                        </rating-button>
+                        </div>
+                        
+                        <button class="py-2 px-6 bg-red-600 text-red-100 rounded shadow">Destroy Review</button>
+                    </div>
+    
+                    <div class="p-6 border rounded">
+                        <review-content class="mb-6 block leading-relaxed space-y-3">
+                            <p class="text-2xl font-semibold">Abhi Patil <span class="text-base font-light">of Independent (UK)</span></p>
+                            <p>Lorem markdownum priores iactate receptus margine in motu ferreus pastor. Teneat tua opifex regina, adest; similisque nec, me convivia ortus.</p>
+                            <p>Est sontes praemia fatorum diversosque innubere rursus. Tanto inter commenta tremulasque tergo donec Apollinei mearum: Hector colorum horruit.</p>
+                            <p>Cur repulsa matrem frequentes parvum coniuge ad nisi leto, ira. Orbis levatus o coniugis longis confinia bello rursus quem Atridae indulgere! Sanguine o operi flammas sorores suffundit et ilia. Nais edentem tamen. Acta munera enixa ad terram!</p>
+                            <p>Sint sed per oppugnant Medusae Pagasaeae undique rebus cernit terram delituit dilapsa tigres. Ait omne conatur nomen cumque, ad Minoa magna dolentes, ageret. Sum addat, et unum iunge, aberant his indigenae facundia?</p>
+                            <p>Perdidit astra, si maternis sibi, Phoebi protinus senecta digitos. Atque suique Lyrnesia, prosunt suae mihi aqua, te!</p>
+                            <p>Subsedit tantaque vulnera totiens aptos vivit digna pectoraque mutua. Duro ante tibi perhorruit praedelassat simulat turis loco hunc dederat viscera scilicet transitus quam longius aenea, concussaque hoc mille.</p>
+                            <p>Ut erat. Tibi Themin corpore saepes.</p>
+                        </review-content>
+                        <div class="mb-6 flex space-x-2">
+                        <p class="font-bold">Rating:</p>
+                        <p id="rating-number">4</p>
+                        <rating-button class="inline-block -space-x-2">
+                            <button class="text-blue-500 font-extrabold transform rotate-90">&larr;</button>
+                            <button class="text-blue-500 font-extrabold transform -rotate-90">&larr;</button>
+                        </rating-button>
+                        </div>
+                        
+                        <button class="py-2 px-6 bg-red-600 text-red-100 rounded shadow">Destroy Review</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
